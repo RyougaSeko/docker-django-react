@@ -1,30 +1,5 @@
 # docker-django-react
 
-## スタック
-
-
-### Django
-
-- Django v5
-- Django Rest Framework
-- Django Rest Framework Simple JWT
-- PyTest
-
-### React
-
-- Create React App
-- Node dev server via Docker LTS alpine image
-- Hot reload
-
-### Postgress
-
-- Docker v16.1 alpine image
-
-### Ngnix
-
-- Docker stable alpine
-- Serves Django's static and media files as well.  See conf for details.
-
 
 ## Dockerコンテナの立ち上げ
 
@@ -77,3 +52,28 @@ $> docker-compose exec django python manage.py makemigrations
 $> docker-compose exec django python manage.py migrate
 
 ```
+
+## スタック
+
+
+### Django
+
+- Django v5
+- Django Rest Framework
+- Django Rest Framework Simple JWT
+- PyTest
+
+### React
+
+- Create React App
+- Node dev server via Docker LTS alpine image
+- Hot reload
+
+### Postgress
+
+- Docker v16.1 alpine image
+
+### Ngnix
+
+- Docker stable alpine
+- Serves Django's static and media files as well.  See conf for details.
