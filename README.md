@@ -3,32 +3,32 @@
 ## スタック
 
 
-Django
+### Django
 
 - Django v5
 - Django Rest Framework
 - Django Rest Framework Simple JWT
 - PyTest
 
-React
+### React
 
 - Create React App
 - Node dev server via Docker LTS alpine image
 - Hot reload
 
-Postgress
+### Postgress
 
 - Docker v16.1 alpine image
 
-Ngnix
+### Ngnix
 
 - Docker stable alpine
 - Serves Django's static and media files as well.  See conf for details.
 
 
-### Dockerコンテナの立ち上げ
+## Dockerコンテナの立ち上げ
 
-ビルド
+### コンテナビルド
 
 ```sh
 
@@ -36,7 +36,7 @@ $> docker compose build
 
 ```
 
-コンテナ立ち上げ
+### コンテナ立ち上げ
 
 ```sh
 
@@ -44,7 +44,7 @@ $> docker compose up
 
 ```
 
-削除
+### コンテナ削除
 
 ```sh
 
