@@ -110,7 +110,7 @@ $> docker exec -it <container-name> sh
 | Container  | Service | Host Port | Docker Port |
 | ---------- | ------- | --------- | ----------- |
 | dev-django | django  | 8001      | 8000        |
-| dev-react  | react   | 3001      | 3000        |
+| dev-react  | react   | 3000      | 3000        |
 | dev-db     | db      | 5432      | 5432        |
 | dev-nginx  | nginx   | 8080      | 80          |
 
@@ -123,3 +123,9 @@ Please make all requests from your browser through <http://localhost:8080> and N
 ### Can this be used for production?
 
 This project is focused on making it easier to perform local full stack development.  However, it is possible to add new docker compose and docker files to also support production.  It's just out of scope for this project.  Please have a look in the archives folder for some old production docker files to give you an idea of what worked in the past.
+
+## migration
+`docker-compose exec django python manage.py makemigrations`
+
+## migrate
+`docker-compose exec django python manage.py migrate`
