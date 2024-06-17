@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { API_BASE_URL } from '../constants';
 
+
 function TodoApp() {
   const [items, setItems] = useState([]);
   const [newItem, setNewItem] = useState({ name: '', description: '' });
@@ -93,7 +94,7 @@ function TodoApp() {
           <thead>
             <tr className="bg-gray-100">
               <th className="px-4 py-2">タスク</th>
-              <th className="px-4 py-2">詳細</th>
+              <th className="px-4 py-2">説明</th>
               <th className="px-4 py-2">操作</th>
             </tr>
           </thead>
