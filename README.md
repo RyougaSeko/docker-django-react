@@ -3,19 +3,11 @@
 
 ## Dockerコンテナの立ち上げ
 
-### コンテナビルド
+### コンテナビルド・立ち上げ
 
 ```sh
 
-$> docker compose build
-
-```
-
-### コンテナ立ち上げ
-
-```sh
-
-$> docker compose up
+$> docker compose up --build
 
 ```
 
