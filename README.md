@@ -19,7 +19,7 @@ $> docker compose down
 
 ```
 
-### Containers, Services and Ports
+### コンテナと対応するポート
 
 | Container  | Service | Host Port | Docker Port |
 | ---------- | ------- | --------- | ----------- |
