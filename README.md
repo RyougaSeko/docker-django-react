@@ -56,19 +56,21 @@ $> docker-compose exec django python manage.py createsuperuser
 
 ターミナルでUsername等を設定
 
-例：
-Username: test
-Email address: test@gmail.com
-Password: test_password
+例：  
+Username: test  
+Email address: test@gmail.com  
+Password: test_password  
 
 ### adminとしてログイン
 http://localhost:8001/admin
 
-例：
-Username: test
-Password: test_password
+例：  
+Username: test  
+Password: test_password  
 
 ### 各テーブルが確認できればOK
+
+<img width="779" alt="スクリーンショット 2024-06-17 15 54 57" src="https://github.com/RyougaSeko/docker-django-react/assets/26045410/821c42f8-6499-42fe-ba73-60cb404b902c">
 
 ## スタック
 
