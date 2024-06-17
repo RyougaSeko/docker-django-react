@@ -68,7 +68,7 @@ http://localhost:8001/admin
 Username: test  
 Password: test_password  
 
-### テーブルの作成や修正などなどをできればOK
+### テーブルの作成や修正などをできればOK
 
 <img width="779" alt="スクリーンショット 2024-06-17 15 54 57" src="https://github.com/RyougaSeko/docker-django-react/assets/26045410/821c42f8-6499-42fe-ba73-60cb404b902c">
 
