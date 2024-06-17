@@ -1,9 +1,13 @@
 from django.contrib import admin
-from django.contrib.auth.admin import UserAdmin as DefaultUserAdmin
+from django.contrib import admin
+from django.apps import apps
+from django.contrib.admin.sites import AlreadyRegistered
 
-from .models import User
 
+app = apps.get_app_config('core')
 
-@admin.register(User)
-class UserAdmin(DefaultUserAdmin):
-    pass
+for model_name, model in app.models.items():
+    try:
+        admin.site.register(model)
+    except AlreadyRegistered:
+        pass

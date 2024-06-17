@@ -45,6 +45,31 @@ $> docker-compose exec django python manage.py migrate
 
 ```
 
+## DBの確認
+
+### Django admin用アカウントの作成
+```sh
+
+$> docker-compose exec django python manage.py createsuperuser
+
+```
+
+ターミナルでUsername等を設定
+
+例：
+Username: test
+Email address: test@gmail.com
+Password: test_password
+
+### adminとしてログイン
+http://localhost:8001/admin
+
+例：
+Username: test
+Password: test_password
+
+### 各テーブルが確認できればOK
+
 ## スタック
 
 
@@ -69,3 +94,8 @@ $> docker-compose exec django python manage.py migrate
 
 - Docker stable alpine
 - Serves Django's static and media files as well.  See conf for details.
+
+## API
+
+### API定義を確認
+http://localhost:8001/api/
